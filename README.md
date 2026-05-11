@@ -26,6 +26,20 @@ checkpoint/saved_checkpint/final_version_4_first_jp.pt
 
 Large `.mat` and `.pt` files are tracked with Git LFS.
 
+## Figure Scripts
+
+The plotting scripts used for the paper figures are collected in `paper_figure_scripts/`.
+The scripts were renamed to describe the corresponding figure content more clearly:
+
+- `fig_dual_channel_prediction_and_continuation_error.py`: dual-channel prediction and continuation error plots.
+- `fig_dual_channel_update_and_continuation_offset.py`: dual-channel update and continuation time-offset plots.
+- `fig_model_vs_human_ibi_scatter.py`: model-vs-human inter-beat interval scatter plots.
+- `fig_human_computer_phase_frequency_distribution.py`: human-computer phase, frequency, and distribution comparison plots.
+- `fig_human_human_phase_frequency_distribution.py`: human-human phase, frequency, and distribution comparison plots.
+- `fig_model_comparison_and_adaptation_bars.py`: model comparison and adaptation bar plots.
+- `fig_perturbation_conditions.py`: perturbation-condition plots for skipped and shifted beats.
+- `fig_relative_phase_circle_plot.py`: relative-phase circle plots.
+
 ## Installation
 
 To set up the environment:
@@ -56,3 +70,5 @@ To reproduce the evaluation results:
    ```
 
 This will evaluate the model using the provided test dataset and replicate the results from the paper.
+
+To regenerate the paper figures, run the corresponding script from `paper_figure_scripts/` after checking the data and output paths near the top of that script.
